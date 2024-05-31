@@ -18,8 +18,8 @@ class about extends me  {
 ```
 <h3> My Statics</h3>
 <p align="left">
-<img src="https://raw.githubusercontent.com/tomato186/test/30f765414bedaac9ef37763d372cc986ac05e034/generated/overview.svg?token=AQ24QIF76U5BC4FMHOM4P23GLHMK4#gh-dark-mode-only"/>
-<img src="https://raw.githubusercontent.com/tomato186/test/30f765414bedaac9ef37763d372cc986ac05e034/generated/languages.svg?token=AQ24QIHGUEXZW7T6I6GLFNLGLHMIG#gh-dark-mode-only"/>
+<img src="https://github-readme-stats.vercel.app/api?username=tomato186&show_icons=true&theme=radical&count_private=true"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tomato186&layout=compact&theme=radical"/>
 </p>
 <a></a>
 <h3> My Languages</h3>
