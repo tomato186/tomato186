@@ -10,7 +10,6 @@ class about extends me  {
         age:"18",
         country:"iq",
         discord_id:"804249928367996940",
-        x_username:"tomato1862",
         programming_languages:['js','c++','ruby'],
         };
     }
