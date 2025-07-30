@@ -6,11 +6,10 @@
 class about extends me  {
     constructor() {
         this.user = {
-        username:"Miku",
-        age:"18",
+        username:"Ahmad",
+        age:"19",
         country:"iq",
-        discord_id:"804249928367996940",
-        programming_languages:['js','c++','ruby'],
+        programming_languages:['js','c++','ruby','Py'],
         };
     }
 }
@@ -36,7 +35,7 @@ class about extends me  {
     <img alt="ruby" src="https://img.shields.io/badge/Ruby-B01401?style=for-the-badge&logo=ruby&logoColor=white"/>
 </p>
 <a></a>
-<h3>My Fameworks</h3>
+<h3>My Fameworks And Engines</h3>
 <p>
  <img alt="nodejs" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/>   &emsp;
   <img alt="Expo" src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"/>   &emsp;
@@ -52,7 +51,7 @@ class about extends me  {
 <h3>My IDE/Editor</h3>
 <p>
  <img alt="vscode" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>   &emsp;
-  <img alt="replit" src="https://img.shields.io/badge/Replit-DD1200?style=for-the-badge&logo=Replit&logoColor=white"/>
+ 
 </p>
 
 <!--
