@@ -32,7 +32,6 @@ class about extends me  {
     &emsp;
     <img alt="Css" src="https://img.shields.io/badge/Css3-214CE5?style=for-the-badge&logo=css3&logoColor=white"/>
     &emsp;
-    <img alt="ruby" src="https://img.shields.io/badge/Ruby-B01401?style=for-the-badge&logo=ruby&logoColor=white"/>
 </p>
 <a></a>
 <h3>My Fameworks And Engines</h3>
