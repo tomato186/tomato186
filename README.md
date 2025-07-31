@@ -14,11 +14,6 @@ class about extends me  {
     }
 }
 ```
-<h3> My Statics</h3>
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=tomato186&show_icons=true&theme=radical&count_private=true"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tomato186&layout=compact&theme=radical"/>
-</p>
 <a></a>
 <h3> My Languages</h3>
 <p>
