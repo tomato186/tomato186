@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>عرض أقسام</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-black relative text-white">
@@ -15,8 +18,8 @@
     <div class="flex-grow">
       <ul class="flex justify-center text-base md:text-lg text-white">
         <li class="mr-1"><a href="#" class="hover:text-purple-400">الصفحة الرئيسية</a></li>
+        <li class="mr-10"><a href="#" class="hover:text-purple-400">معلومات عني</a></li>
         <li class="mr-10"><a href="#" class="hover:text-purple-400">المشاريع</a></li>
-        <li class="mr-10"><a href="#" class="hover:text-purple-400">الخدمات</a></li>
         <li class="mr-10"><a href="#" class="hover:text-purple-400">وسائل التواصل</a></li>
       </ul>
     </div>
@@ -25,24 +28,54 @@
 
 
     <main class="mt-32 px-6 max-w-6xl mx-auto space-y-72">
-      <section class="text-center" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="text-5xl font-extrabold text-white mb-6 drop-shadow-md">اهلا بك</h2>
-        <p class="text-lg text-gray-300 drop-shadow-sm">في الصفحة الشخصية الخاصة بي , استمتع</p>
-      </section>
+<section class="flex flex-col md:flex-row items-center gap-12" data-aos="fade-up" data-aos-duration="1000">
+  <div class="flex-1 text-right">
+    <h2 class="text-4xl font-extrabold mb-4 drop-shadow-md">معلومات عني</h2>
+    <p class="text-gray-300 text-lg drop-shadow-sm">
+      بعض المعلومات عني , اللغات التي استعملها , العمر , البلد
+    </p>
+  </div>
 
-      <section class="flex flex-col md:flex-row items-center gap-12" data-aos="fade-up" data-aos-duration="1000">
-        <div class="flex-1 text-right">
-          <h2 class="text-4xl font-extrabold mb-4 drop-shadow-md">معلومات عني</h2>
-          <p class="text-gray-300 text-lg drop-shadow-sm">
-            بعض المعلومات عني , اللغات التي استعملها , العمر , البلد
-          </p>
-        </div>
-        <div class="flex-1 flex items-center justify-center">
-          <div class="max-w-[600px] max-h-[400px] w-fit h-fit bg-black/20 border border-gray-700 rounded-2xl p-4 shadow-[0_10px_30px_-10px_rgba(255,255,255,0.1)] hover:scale-105 transition-all duration-300 backdrop-blur-sm">
-            <img src="code.png" class="max-w-full max-h-full object-contain rounded-xl" />
-          </div>
-        </div>
-      </section>
+  <div class="flex-1 flex items-center justify-center">
+    <div class="max-w-[600px] max-h-[400px] w-fit h-fit bg-black/20 border border-gray-700 rounded-2xl p-4 shadow-[0_10px_30px_-10px_rgba(255,255,255,0.1)] hover:scale-105 transition-all duration-300 backdrop-blur-sm flex items-center justify-center overflow-auto">
+      <pre class="language-javascript text-sm" style="direction:ltr; text-align:left;"><code id="typingBox">
+class about extends me  {
+    constructor() {
+        this.user = {
+            username:"Ahmad",
+            age:"19",
+            country:"iq",
+            programming_languages:['js','c++','ruby','Py'],
+            discord_username:'1.iqd',
+            x_username:'LifeTomato186',
+            instagram_username:''
+          
+        };
+    }
+}
+      </code></pre>
+    </div>
+  </div>
+</section>
+
+<script>
+  const typingBox = document.getElementById("typingBox");
+  const text = typingBox.textContent; // الكود الاصلي
+  typingBox.textContent = ""; // إفراغ
+  let index = 0;
+
+  function typeWriter() {
+    if (index <= text.length) {
+      typingBox.textContent = text.slice(0, index);
+      Prism.highlightElement(typingBox); // تلوين الكود أثناء الكتابة
+      index++;
+      setTimeout(typeWriter, 30); // سرعة الكتابة
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", typeWriter);
+</script>
+
 
       <section class="flex flex-col md:flex-row-reverse items-center gap-12" data-aos="fade-up" data-aos-duration="1000">
         <div class="flex-1 text-right">
@@ -71,6 +104,7 @@
           </div>
         </div>
       </section>
+      
     </main>
 
     <footer class="bg-black text-white mt-32 text-center">
@@ -79,8 +113,8 @@
           <h4 class="text-lg font-semibold mb-4">روابط الموقع</h4>
           <ul class="space-y-2 text-gray-300">
             <li><a href="#" class="hover:text-white">الصفحة الرئيسية</a></li>
+            <li><a href="#" class="hover:text-white">معلومات عني</a></li>
             <li><a href="#" class="hover:text-white">المشاريع</a></li>
-            <li><a href="#" class="hover:text-white">الخدمات</a></li>
             <li><a href="#" class="hover:text-white">معلومات عني</a></li>
           </ul>
         </div>
